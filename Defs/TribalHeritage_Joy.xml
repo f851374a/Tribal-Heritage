@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Mehen -->
+
+	<ThingDef ParentName="FurnitureWithQualityBase">
+		<defName>Mehen</defName>
+		<label>mehen</label>
+		<description>Dating from 3000BC, this is the oldest board game for more than two players. Original rules are long forgotten but game has risen again with new rules and has become popular among tribes of present. It tests intellect and luck.</description>
+		<graphicData>
+			<texPath>Mehen/Mehen</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<shadowData>
+				<volume>(1.6, 0.3, 1.6)</volume>
+				<offset>(0, 0, -0.15)</offset>
+			</shadowData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.40</fillPercent>
+		<building>
+			<joyKind>Gaming_Cerebral</joyKind>
+		</building>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>10000</WorkToBuild>
+			<Mass>120</Mass>
+			<Beauty>0</Beauty>
+			<JoyGainFactor>1.3</JoyGainFactor>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(2,2)</size>
+		<stuffCategories>
+		  <li>Metallic</li>
+		  <li>Woody</li>
+		  <li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>125</costStuffCount>
+		<pathCost>70</pathCost>
+		<passability>PassThroughOnly</passability>
+		<designationCategory>Joy</designationCategory>
+		<designationHotKey>Misc5</designationHotKey>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+		</comps>
+		<uiIconScale>0.9</uiIconScale>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<maxTechLevelToBuild>Neolithic</maxTechLevelToBuild>
+	</ThingDef>
+	
+	<JoyGiverDef>
+		<defName>Play_Mehen</defName>
+		<giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+		<baseChance>4</baseChance>
+		<thingDefs>
+			<li>Mehen</li>
+		</thingDefs>
+		<jobDef>Play_Mehen</jobDef>
+		<joyKind>Gaming_Cerebral</joyKind>
+		<requiredCapacities>
+			<li>Sight</li>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</JoyGiverDef>
+	
+	<JobDef>
+		<defName>Play_Mehen</defName>
+		<driverClass>JobDriver_SitFacingBuilding</driverClass>
+		<reportString>playing mehen.</reportString>
+		<joyDuration>4000</joyDuration>
+		<joyMaxParticipants>6</joyMaxParticipants>
+		<joySkill>Intellectual</joySkill>
+		<joyXpPerTick>0.004</joyXpPerTick>
+		<joyKind>Gaming_Cerebral</joyKind>
+		<taleOnCompletion>PlayedGame</taleOnCompletion>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<!-- Akarala -->
+	
+	<ThingDef ParentName="FurnitureWithQualityBase">
+		<defName>Akarala</defName>
+		<label>akarala</label>
+		<description>An advanced version of simple hoopstone ring, akarala represented by vertical board with many sockets. It has a rule set that encourages to throw stones in different sockets depending on game situations. It trains shooting ability.</description>
+		<graphicData>
+			<texPath>Akarala/Akarala</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>true</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.40</fillPercent>
+		<building>
+			<joyKind>Gaming_Dexterity</joyKind>
+			<watchBuildingStandDistanceRange>
+				<min>5</min>
+				<max>5</max>
+			</watchBuildingStandDistanceRange>
+			<watchBuildingStandRectWidth>4</watchBuildingStandRectWidth>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_WatchArea</li>
+		</placeWorkers>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>12000</WorkToBuild>
+			<Mass>300</Mass>
+			<Beauty>0</Beauty>
+			<JoyGainFactor>1.3</JoyGainFactor>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(2,1)</size>
+		<stuffCategories>
+		  <li>Metallic</li>
+		  <li>Woody</li>
+		  <li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>190</costStuffCount>
+		<pathCost>70</pathCost>
+		<passability>PassThroughOnly</passability>
+		<designationCategory>Joy</designationCategory>
+		<designationHotKey>Misc3</designationHotKey>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+		</comps>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<maxTechLevelToBuild>Neolithic</maxTechLevelToBuild>
+	</ThingDef>
+	
+	<JoyGiverDef>
+		<defName>Play_Akarala</defName>
+		<giverClass>JoyGiver_WatchBuilding</giverClass>
+		<baseChance>4</baseChance>
+		<thingDefs>
+			<li>Akarala</li>
+		</thingDefs>
+		<jobDef>Play_Akarala</jobDef>
+		<desireSit>false</desireSit>
+		<joyKind>Gaming_Dexterity</joyKind>
+		<requiredCapacities>
+			<li>Sight</li>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</JoyGiverDef>
+  
+	<JobDef>
+		<defName>Play_Akarala</defName>
+		<driverClass>JobDriver_PlayHoopstone</driverClass>
+		<reportString>playing akarala.</reportString>
+		<joyDuration>4000</joyDuration>
+		<joyMaxParticipants>2</joyMaxParticipants>
+		<joySkill>Shooting</joySkill>
+		<joyXpPerTick>0.004</joyXpPerTick>
+		<joyKind>Gaming_Dexterity</joyKind>
+		<taleOnCompletion>PlayedGame</taleOnCompletion>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	
+</Defs>

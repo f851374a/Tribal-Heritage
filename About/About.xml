@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Tribal Heritage</name>
+	<author>82ab53e4</author>
+    <!--<url></url>-->
+	<supportedVersions>
+		<li>1.0</li>
+	</supportedVersions>
+	<description>The purpose of this mod is adding tribe-related items that will be useful in later stages of game so tribes can look like tribes even if they are about to build a spaceship. This includes:
+
+	1. Three new war masks. They are helmets analogues that provide slightly less protection but have +10% pain shock threshold buff like basic war mask. They can be crafted by tribes only.
+	2. Two new joy activities, mehen and akarala. They will replace poker and billiard for tribe faction.
+	3. Two new advanced bow weapons. They can be crafted by any player faction.</description>
+</ModMetaData>

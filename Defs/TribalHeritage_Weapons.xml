@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BaseMakeableGun">
 		<defName>Bow_Compound</defName>
 		<label>compound bow</label>
-		<description>An industrial era compound bow. Due complex levering system with pulleys and cables this is an improvement over traditional bows in almost every aspect and on par with some firearms.</description>
+		<description>An industrial era compound bow. Due complex levering system with pulleys and cables this is an improvement over traditional bows in almost every aspect and on par with simple firearms.</description>
 		<graphicData>
 			<texPath>CompoundBow/CompoundBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -16,6 +16,7 @@
 		</costList>
 		<weaponTags>
 			<li>NeolithicRangedChief</li>
+			<li>CompoundBowWeapon</li>
 		</weaponTags>
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
@@ -48,7 +49,6 @@
 			</li>
 		</tools>
 		<recipeMaker>
-			<researchPrerequisite>RecurveBow</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -75,7 +75,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_ChargeBow</defName>
 		<label>charge bow</label>
-		<description>A charge-shot weapon in form of bow. Pulse-charge technology charges each shot with unstable energy as it leaves the weapon. Charge bow uses two side chargers instead of one central charger, allowing to charge shots more intensive but it makes burst-fire impossible while accuracity remains average.</description>
+		<description>A charge-shot weapon in form of bow. Pulse-charge technology charges each shot with unstable energy as it leaves the weapon. Charge bow uses two side chargers instead of one central charger, allowing to charge shots more intensive but it makes burst-fire impossible while range remains average.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>ChargeBow/ChargeBow</texPath>
@@ -86,9 +86,9 @@
 			<Mass>7</Mass>
 			<AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
-			<AccuracyMedium>0.60</AccuracyMedium>
-			<AccuracyLong>0.50</AccuracyLong>
-			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.70</AccuracyLong>
+			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
 			<WorkToMake>50000</WorkToMake>
 		</statBases>
 		<recipeMaker>
@@ -112,7 +112,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_ChargeBow</defaultProjectile>
-				<warmupTime>1.50</warmupTime>
+				<warmupTime>1.40</warmupTime>
 				<range>28.9</range>
 				<soundCast>Shot_ChargeBlaster</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>

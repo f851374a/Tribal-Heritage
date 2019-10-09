@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Limiting joy objects-->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "PokerTable"]</xpath> 
+		<value>
+			<minTechLevelToBuild>Medieval</minTechLevelToBuild>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "BilliardsTable"]</xpath> 
+		<value>
+			<minTechLevelToBuild>Medieval</minTechLevelToBuild>
+		</value>
+	</Operation>
+	
+	<!-- Some gun tags-->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "Gun_ChainShotgun"]</xpath> 
+		<value>
+			<weaponTags>
+				<li>TribalHeritageEliteBerserker</li>
+			</weaponTags>
+		</value>
+	</Operation>
+	
+
+	<!-- Adding pirate berserker to pirate faction 	-->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/FactionDef[defName = "Pirate"]/pawnGroupMakers</xpath> 
+		<value>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>30</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<PirateSavage>10</PirateSavage>
+					<PirateBerserker>10</PirateBerserker>
+					<PirateEliteBerserker>10</PirateEliteBerserker>
+				</options>
+      </li>
+		</value>
+	</Operation>
+	
+
+
+		
+</Patch>

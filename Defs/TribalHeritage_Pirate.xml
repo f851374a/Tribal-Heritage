@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="PirateTribalBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>Pirate</defaultFactionType>
+		<backstoryCategories>
+			<li>Raider</li>
+			<li>Tribal</li>
+		</backstoryCategories>
+		<chemicalAddictionChance>0.1</chemicalAddictionChance>
+		<invNutrition>2.55</invNutrition>
+		<itemQuality>Normal</itemQuality>
+		<maxGenerationAge>45</maxGenerationAge>
+		<canBeSapper>true</canBeSapper>
+		<apparelTags>
+			<li>Neolithic</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="PirateTribalBase">
+		<defName>PirateSavage</defName>
+		<label>pirate savage</label>
+		<combatPower>50</combatPower>
+		<itemQuality>Normal</itemQuality>
+		<gearHealthRange>
+			<min>0.4</min>
+			<max>1.1</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>300</min>
+			<max>500</max>
+		</apparelMoney>
+		 <apparelRequired>
+			<li>Apparel_PlateWarMask</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>Gun</li>
+			<li>CompoundBowWeapon</li>
+		</weaponTags>
+		<weaponMoney>
+			<min>200</min>
+			<max>300</max>
+		</weaponMoney>
+		
+		<inventoryOptions>
+			<skipChance>0.9</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>25</min>
+						<max>50</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+				</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="PirateTribalBase">
+		<defName>PirateBerserker</defName>
+		<label>pirate berserker</label>
+		<combatPower>90</combatPower>
+		<itemQuality>Normal</itemQuality>
+		<gearHealthRange>
+			<min>0.7</min>
+			<max>2.3</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>900</min>
+			<max>1200</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+		</apparelTags>
+		 <apparelRequired>
+			<li>Apparel_AdvancedWarMask</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>MedievalMeleeAdvanced</li>
+			<li>Gun</li>
+			<li>CompoundBowWeapon</li>
+		</weaponTags>
+		<weaponMoney>
+			<min>300</min>
+			<max>500</max>
+		</weaponMoney>
+		
+		<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+			<combatEnhancingDrugsCount>
+				<min>0</min>
+				<max>2</max>
+			</combatEnhancingDrugsCount>
+		
+		<inventoryOptions>
+			<skipChance>0.8</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>25</min>
+						<max>150</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+				</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="PirateTribalBase">
+		<defName>PirateEliteBerserker</defName>
+		<label>pirate elite berserker</label>
+		<combatPower>150</combatPower>
+		<itemQuality>Normal</itemQuality>
+		<gearHealthRange>
+			<min>0.7</min>
+			<max>3.2</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>2500</min>
+			<max>3500</max>
+		</apparelMoney>
+		<apparelTags>
+			 <li>IndustrialMilitaryBasic</li>
+			 <li>IndustrialMilitaryAdvanced</li>
+			 <li>SpacerMilitary</li>
+		</apparelTags>
+		 <apparelRequired>
+			<li>Apparel_PowerWarMask</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>MedievalMeleeAdvanced</li>
+			<li>IndustrialGunAdvanced</li>
+			<li>TribalHeritageEliteBerserker</li>
+		</weaponTags>
+		<weaponMoney>
+			<min>500</min>
+			<max>1000</max>
+		</weaponMoney>
+		
+		<combatEnhancingDrugsChance>0.80</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>
+			<min>0</min>
+			<max>2</max>
+		</combatEnhancingDrugsCount>
+		
+		<inventoryOptions>
+			<skipChance>0.8</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>50</min>
+						<max>200</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>2</max>
+				</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+  </PawnKindDef>
+  
+
+</Defs>
